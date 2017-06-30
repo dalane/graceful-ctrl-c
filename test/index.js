@@ -1,19 +1,21 @@
 "use strict";
 
-/*
-  console.log('\033[2J');
-
-  If you're on Windows, I think this works : (sets the cursor at 0,0)
-
-  var util = require('util');
-  util.print("\u001b[2J\u001b[0;0H");
- */
+const gracefulCtrlC = require('../src');
+const assert = require('assert');
 
 describe('graceful-ctrl-c', function () {
-  xit('throw an error if no callback provided', function () {
-    
+  describe('non-async tests', function () {
+    it('throw an error if no callback provided', function () {
+      try {
+        // expect a callback to be provided so not providing the callback should
+        // throw an error...
+        gracefulCtrlC();
+      } catch (error) {
+        assert.equal(error.message, 'graceful-ctrl-c expected a callback function');
+      }
+    });
   });
-  xit('sends ctrl-c to the terminal which triggers the callback', function () {
-
+  describe('async tests', function () {
+    xit('sends ctrl-c to the terminal which triggers the callback');
   });
 });

@@ -1,6 +1,6 @@
 {
   "name": "@dalane/graceful-ctrl-c",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Intercept Ctrl-C from the command line in your node apps",
   "main": "./src",
   "scripts": {
