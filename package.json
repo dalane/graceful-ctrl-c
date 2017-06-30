@@ -1,0 +1,24 @@
+{
+  "name": "@dalane/graceful-ctrl-c",
+  "version": "0.0.1",
+  "description": "Intercept Ctrl-C from the command line in your node apps",
+  "main": "./src",
+  "scripts": {
+    "test": "nyc --reporter=html ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalane/graceful-ctrl-c.git"
+  },
+  "author": "Dallas Ewing <developers@dalane.io>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/dalane/graceful-ctrl-c/issues"
+  },
+  "homepage": "https://github.com/dalane/graceful-ctrl-c#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3"
+  }
+}
